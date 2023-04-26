@@ -35,7 +35,21 @@ link_directories(${LEPTONICA_LIBRARY_DIRS})
 # The source code files are listed as arguments to this function.
 add_executable(
         ocv_recognizer
-        )
+        ocv_recognizer/sources
+        ocv_recognizer/sources/images.xml
+        ocv_recognizer/sources/classifications.xml
+        ocv_recognizer/main.h
+        ocv_recognizer/main.cpp
+        ocv_recognizer/detect_chars.cpp
+        ocv_recognizer/detect_chars.h
+        ocv_recognizer/detect_plates.cpp
+        ocv_recognizer/detect_plates.h
+        ocv_recognizer/possible_char.cpp
+        ocv_recognizer/possible_char.h
+        ocv_recognizer/possible_plate.cpp
+        ocv_recognizer/possible_plate.h
+        ocv_recognizer/preprocess.cpp
+        ocv_recognizer/preprocess.h)
 
 # The "target_link_libraries" function is used to link the OpenCV library to the executable.
 # The OpenCV_LIBS variable contains the names of the libraries required to link with OpenCV.
